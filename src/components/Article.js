@@ -8,6 +8,7 @@ export default function Article () {
   const articles = useSelector(selectArticles)
   const { title } = useParams()
   const article = articles[title]
+  
 
   return article ? (
     <div className='article-container'>
